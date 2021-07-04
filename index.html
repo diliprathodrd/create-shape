@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crete Shape</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="create-btn">
+        <button onclick="formContainer()">Create Shape</button>
+      </div>
+
+      <div class="form-container">
+        <div class="form-container-header">
+          <h2>Create Shape</h2>
+          <i class="far fa-times-circle" onclick="closeForm()"></i>
+        </div>
+
+        <hr />
+
+        <div class="form-container-body">
+          <div class="form-fields">
+            <label for="inputShape">Name of Shape</label>
+            <input
+              id="inputShape"
+              type="text"
+              placeholder="Enter Shape Name"
+              required
+            />
+          </div>
+
+          <div class="height-width">
+            <div class="form-fields">
+              <label for="height">Height</label>
+              <input
+                id="height"
+                type="number"
+                class="short-input-height"
+                placeholder="Enter height"
+                required
+              />
+            </div>
+            <div class="form-fields">
+              <label for="width">Width</label>
+              <input
+                id="width"
+                type="number"
+                class="short-input-width"
+                placeholder="Enter width"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="height-width">
+            <div class="form-fields">
+              <label for="xPosition">X Position</label>
+              <input
+                id="xPosition"
+                type="number"
+                class="short-input-height"
+                placeholder="Enter X value"
+                required
+              />
+            </div>
+            <div class="form-fields">
+              <label for="yPosition">Y Position</label>
+              <input
+                id="yPosition"
+                type="number"
+                class="short-input-width"
+                placeholder="Enter Y value"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="submit-btn">
+            <button onclick="getValue()">Create New Shape</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="corner-modal">
+        <h3>Details</h3>
+        <p class="shape-name-modal">--</p>
+        <p class="shape-x-position-modal">Mouse X -</p>
+        <p class="shape-y-position-modal">Mouse Y -</p>
+        <button id="add-shape">+ Add a Shape</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
